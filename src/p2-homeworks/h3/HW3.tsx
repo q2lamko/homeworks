@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import GreetingContainer from "./GreetingContainer";
 import {v1} from "uuid";
+import {Simulate} from "react-dom/test-utils";
+import click = Simulate.click;
 
 
 // types
@@ -13,7 +15,7 @@ export type UserType = {
 function HW3() {
     const [users, setUsers] = useState<Array<UserType>>([]); // need to fix any
     const addUserCallback = (name: string) => { // need to fix any
-        setUsers([]); // need to fix
+        setUsers([{_id: v1() , name},...users]); // need to fix []
     }
 
     return (
@@ -30,6 +32,8 @@ function HW3() {
             <hr/>
         </div>
     );
+    
+
 }
 
 export default HW3;

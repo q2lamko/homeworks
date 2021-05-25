@@ -8,6 +8,7 @@
 .errorInput {
     border: 3px solid lime;
     background: red;
+    font-style: italic;
 }
 
 .error {
@@ -15,4 +16,5 @@
 }
 .input:focus {
     outline: none;
+    background-color: #yellow;
 }

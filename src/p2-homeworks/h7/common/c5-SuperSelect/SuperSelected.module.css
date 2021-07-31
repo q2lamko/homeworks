@@ -1,0 +1,8 @@
+.option {
+    background-color: red;
+
+}
+
+.option:checked {
+    background-color: yellow;
+}
